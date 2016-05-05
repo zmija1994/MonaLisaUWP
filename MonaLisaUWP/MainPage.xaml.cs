@@ -111,6 +111,8 @@ namespace MonaLisaUWP
             {
                 KalendarzButton.Style = (Style)Resources["KalendarzButtonStyleBlack6Inch"];
             }
+
+            this.Frame.Navigate(typeof(CalendarPage));
         }
 
         private void SocialMediaButton_Click(object sender, RoutedEventArgs e)
