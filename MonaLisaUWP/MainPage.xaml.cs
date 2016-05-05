@@ -15,12 +15,42 @@ namespace MonaLisaUWP
 
         private void PlanObiektuButton_Click(object sender, RoutedEventArgs e)
         {
-            PlanObiektuButton.Style = (Style)Resources["PlanObiektuButtonStyleBlack"];
+            if (ActualWidth >= 0 && ActualWidth <= 320)
+            {
+                PlanObiektuButton.Style = (Style)Resources["PlanObiektuButtonStyleBlack4Inch"];
+            }
+            if (ActualWidth >= 321 && ActualWidth <= 341.33)
+            {
+                PlanObiektuButton.Style = (Style)Resources["PlanObiektuButtonStyleBlack45Inch"];
+            }
+            if (ActualWidth >= 342 && ActualWidth <= 360)
+            {
+                PlanObiektuButton.Style = (Style)Resources["PlanObiektuButtonStyleBlack5Inch"];
+            }
+            if (ActualWidth >= 361 && ActualWidth <= 432)
+            {
+                PlanObiektuButton.Style = (Style)Resources["PlanObiektuButtonStyleBlack6Inch"];
+            }
         }
 
         private void SkanerQRButton_Click(object sender, RoutedEventArgs e)
         {
-            SkanerQRButton.Style = (Style)Resources["SkanerQRButtonStyleBlack"];
+            if (ActualWidth >= 0 && ActualWidth <= 320)
+            {
+                SkanerQRButton.Style = (Style)Resources["SkanerQRButtonStyleBlack4Inch"];
+            }
+            if (ActualWidth >= 321 && ActualWidth <= 341.33)
+            {
+                SkanerQRButton.Style = (Style)Resources["SkanerQRButtonStyleBlack45Inch"];
+            }
+            if (ActualWidth >= 342 && ActualWidth <= 360)
+            {
+                SkanerQRButton.Style = (Style)Resources["SkanerQRButtonStyleBlack5Inch"];
+            }
+            if (ActualWidth >= 361 && ActualWidth <= 432)
+            {
+                SkanerQRButton.Style = (Style)Resources["SkanerQRButtonStyleBlack6Inch"];
+            }
         }
 
         private void AktualnosciButton_Click(object sender, RoutedEventArgs e)
