@@ -14,7 +14,6 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace MonaLisaUWP
 {
@@ -22,6 +21,7 @@ namespace MonaLisaUWP
     {
         public CalendarPage()
         {
+
             this.InitializeComponent();
             SystemNavigationManager.GetForCurrentView().BackRequested += Calendar_BackRequested;
         }
